@@ -15,7 +15,7 @@ export const checkCollision = (player, stage, {x: moveX, y:moveY}) =>{
          !stage[y + player.pos.y + moveY] //
 
          //3.chequear que los tetrominos se queden dentro del area de juego (ancho)
-         !stage[y + player.pos.y + moveY][x + player.pos.x + moveX]
+         !stage[y + player.pos.y + moveY][x + player.pos.x + moveX]//
 
          //4.checkear si la celda esta limpia
          stage[y + player.pos.y + moveY][x + player.pos.x + moveX][1] !== 'clear'

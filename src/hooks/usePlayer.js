@@ -7,10 +7,17 @@ import {TETROMINOS, randomTetromino} from '../tetrominos';
 
 export const usePlayer = () => {
     const [player, setPlayer] = useState({
-      pos: {x:0, y:0},
-      tetromino :TETROMINOS[0].shape,
+      pos: { x:0, y:0},
+      tetromino :TETROMINOS[0].shape, //antes randomTetromino()
       collided: false,
     });
+
+
+
+    // se redujo (up)
+    //const PlayerState = useState();
+    //const player= PlayerState();
+    //const setPlayer = playerState[1]
 
     //rotacion de los tetros
     const rotate = (matrix, dir) =>{

@@ -24,13 +24,13 @@ const Tetris = () => {
 
     console.log('re-render');
 
-    const movePlayer = dir =>{
+    const movePlayer = dir => {
         if(!checkCollision(player, stage, {x:dir, y:0})){
         updatePlayerPos({x: dir, y: 0})
         } 
     }
 
-    const startGame = () =>{
+    const startGame = () => {
         //resetea todo 
         setStage(createStage());
         resetPlayer();
@@ -47,7 +47,7 @@ const Tetris = () => {
                 setGameOver(true);
                 setDropTime(null);
             }
-            updatePlayerPos({ x:0, y: 0, collided:true})
+            updatePlayerPos({ x:0, y: 1, collided:false})/// decia false despues true
         }      
     }
 
