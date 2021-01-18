@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+Juego Tetris, creado con React (hooks, styled-components)
+DEMO https://maru8605.github.io/tetris-react/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
